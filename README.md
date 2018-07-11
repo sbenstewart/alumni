@@ -12,11 +12,11 @@ It is for now the template for the Alumni of Tiruvannamalai Medical College.
 The templates for the front end have been selected.Those templates have to be modified to fit our description.
 <br>
 Which is <br>
-..* Landing page with login button
-..* Login/Registration page
-..* The main page
-..* The user detail entry point
-..* The base user resume page
+* Landing page with login button
+* Login/Registration page
+* The main page
+* The user detail entry point
+* The base user resume page
 ## More to convey
 The front end is fixed to html, css, bootstrap ( which makes the site responsive ie. can be viewed on all resolutions).<br>
 The back end is mysql which I think would serve the purpose.<br>
