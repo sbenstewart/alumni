@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jul 19, 2018 at 06:33 PM
+-- Generation Time: Aug 03, 2018 at 07:57 AM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -21,13 +21,17 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `Student` (
-  `Id` int(11) NOT NULL,
-  `Name` varchar(255) NOT NULL,
-  `Passed` int(11) NOT NULL,
-  `Description` varchar(10000) NOT NULL,
-  `Address` varchar(1000) DEFAULT NULL,
-  `Mailid` varchar(100) NOT NULL,
-  `Phone` int(11) DEFAULT NULL
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `passed` int(11) NOT NULL,
+  `description` varchar(10000) NOT NULL,
+  `address` varchar(1000) DEFAULT NULL,
+  `mailid` varchar(100) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  `phone` bigint(11) DEFAULT NULL,
+  `schoolname` varchar(40) NOT NULL,
+  `degree` varchar(40) NOT NULL DEFAULT 'UG',
+  `experience` varchar(2000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
@@ -38,7 +42,7 @@ CREATE TABLE `Student` (
 -- Indexes for table `Student`
 --
 ALTER TABLE `Student`
-  ADD PRIMARY KEY (`Id`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -48,5 +52,4 @@ ALTER TABLE `Student`
 -- AUTO_INCREMENT for table `Student`
 --
 ALTER TABLE `Student`
-  MODIFY `Id` int(11) NOT NULL AUTO_INCREMENT;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
